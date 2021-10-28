@@ -10,8 +10,8 @@ const Sidebar = ({
   return (
     <div className="app-sidebar">
       <div className="app-sidebar-header">
-        <h1>Notes</h1>
-        <button onClick={onAddNote}>Add</button>
+        <h1 className="big-title">React Notepad</h1>
+        <button onClick={onAddNote}>Ajouter</button>
       </div>
       <div className="app-sidebar-notes">
         {sortedNotes.map(({ id, title, body, lastModified }, i) => (
@@ -20,14 +20,14 @@ const Sidebar = ({
             onClick={() => setActiveNote(id)}
           >
             <div className="sidebar-note-title">
-              <strong>{title}</strong>
-              <button onClick={(e) => onDeleteNote(id)}>Delete</button>
+              <strong className="strong-title">{title}</strong>
+              <button onClick={(e) => onDeleteNote(id)}>Supprimer</button>
             </div>
 
-            <p>{body && body.substr(0, 100) + "..."}</p>
+            <p className="body-text">{body && body.substr(0, 100) + "..."}</p>
             <small className="note-meta">
-              Last Modified{" "}
-              {new Date(lastModified).toLocaleDateString("en-GB", {
+              Dernière modification{" "}
+              {new Date(lastModified).toLocaleDateString("fr-FR", {
                 hour: "2-digit",
                 minute: "2-digit",
               })}

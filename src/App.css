@@ -14,7 +14,7 @@ body,
   height: 100vh;
   overflow: hidden;
   font-size: 16px;
-  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/lightpaperfibers.png);
+  background:  rgb(13, 14, 17);
 }
 
 button {
@@ -26,6 +26,7 @@ button {
   font-family: inherit;
   cursor: pointer;
   color: #08c;
+  
 }
 button:hover {
   color: #04c;
@@ -40,13 +41,21 @@ button:hover {
 .app-sidebar {
   width: 30%;
   height: 100vh;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid rgba(0, 255, 255, 0.481);
 }
 
 .app-sidebar-header {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 35px;
+}
+
+.big-title {
+  color: aqua;
+}
+
+.preview-title {
+  color: rgba(0, 255, 255, 0.481);
 }
 .app-sidebar-header h1 {
   margin: 0;
@@ -65,7 +74,7 @@ button:hover {
   justify-content: space-between;
 }
 .app-sidebar-note button {
-  color: crimson;
+  color: crimson
 }
 .app-sidebar-note p {
   margin: 10px 0;
@@ -80,9 +89,19 @@ button:hover {
 }
 .app-sidebar-note.active,
 .app-sidebar-note.active small {
-  background: #08c;
+  background: rgba(0, 255, 255, 0.165);
   color: white;
 }
+
+.strong-title {
+  color: aqua;
+}
+
+.body-text {
+  color: rgba(0, 255, 255, 0.165);
+}
+
+
 
 /* NOTE EDITOR/PREVIEW (MAIN) STYLES */
 
@@ -112,7 +131,7 @@ button:hover {
 .app-main-note-edit input,
 textarea {
   display: block;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(0, 255, 255, 0.481);
   margin-bottom: 20px;
   width: 100%;
   height: calc(50vh - 130px);
@@ -126,9 +145,22 @@ textarea {
   font-size: 2rem;
 }
 
+.input-text {
+  color: rgb(3, 109, 109);
+}
+
+textarea {
+  background-color: rgba(0, 255, 255, 0.481);
+}
+
+textarea:hover {
+  background-color: white;
+  color:rgb(7, 70, 70);
+}
+
 /* Preview */
 .app-main-note-preview {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgba(0, 255, 255, 0.481);
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.02);
 }
