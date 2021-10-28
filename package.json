@@ -1,6 +1,5 @@
 {
-  "homepage": "https://jrgrimshaw.github.io/notes-app-tutorial",
-  "name": "notes-app",
+  "name": "react-notepad",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
